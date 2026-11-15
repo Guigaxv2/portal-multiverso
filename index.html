@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore personagens de Rick and Morty com dados da API pública.">
+  <title>Portal Multiverso | Rick and Morty</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#inicio" aria-label="Portal Multiverso, início"><span class="logo-orbit">✳</span> MULTI<span>VERSO</span></a>
+    <nav aria-label="Menu principal"><a href="#inicio">Início</a><a href="#personagens">Personagens</a><a href="#sobre">Sobre</a></nav>
+    <a class="header-link" href="https://rickandmortyapi.com/documentation" target="_blank" rel="noopener noreferrer">API oficial ↗</a>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy"><p class="eyebrow"><span class="pulse"></span> EXPLORAÇÃO INTERDIMENSIONAL</p><h1>O MULTIVERSO<br>ESTÁ <em>ABERTO.</em></h1><p class="hero-description">Conheça os personagens, descubra suas origens e explore as diferentes dimensões de Rick and Morty com informações obtidas diretamente de uma API pública.</p><a class="primary-btn" href="#personagens">Explorar personagens <span>↗</span></a><div class="hero-stats"><div><strong>API</strong><small>Dados dinâmicos</small></div><div><strong>100%</strong><small>HTML, CSS e JS</small></div><div><strong>LIVE</strong><small>Consulta sob demanda</small></div></div></div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="portal"><div class="portal-center">✳</div></div><span class="star star-a">✦</span><span class="star star-b">✧</span><span class="star star-c">✦</span><span class="coordinate">C-137 / INFINITE REALITIES</span></div>
+    </section>
+    <section class="directory" id="personagens"><div class="section-heading"><div><p class="eyebrow">// BANCO DE DADOS INTERDIMENSIONAL</p><h2>Arquivo de <span>personagens</span></h2><p>Explore as identidades encontradas nas mais diferentes dimensões.</p></div><span class="api-chip"><span class="pulse"></span> DADOS VIA API</span></div>
+      <form id="filters" class="filters" role="search"><label class="search-wrap" for="search"><span aria-hidden="true">⌕</span><input id="search" name="search" type="search" placeholder="Buscar personagem pelo nome..." autocomplete="off"></label><label class="select-wrap" for="status"><span>Status</span><select id="status" name="status"><option value="">Todos</option><option value="alive">Vivo</option><option value="dead">Morto</option><option value="unknown">Desconhecido</option></select></label><button type="submit" class="filter-btn">Buscar ↗</button><button type="button" id="reset" class="reset-btn">Limpar</button></form>
+      <div class="results-bar"><p id="results-label" aria-live="polite">Carregando personagens...</p><p id="page-label"></p></div><div id="cards" class="cards" aria-live="polite"></div><div id="message" class="message" role="status" hidden></div>
+      <div class="pagination"><button id="prev" type="button" disabled>← Anterior</button><button id="next" type="button" disabled>Próxima →</button></div>
+    </section>
+    <section class="about" id="sobre"><div><p class="eyebrow">// SOBRE O PROJETO</p><h2>Uma página. <span>Infinitos mundos.</span></h2></div><p>Projeto acadêmico de desenvolvimento front-end. Os cartões são criados automaticamente com JavaScript usando <code>fetch()</code>, <code>createElement()</code> e <code>appendChild()</code>. Os dados e imagens dos personagens são obtidos da <a href="https://rickandmortyapi.com/" target="_blank" rel="noopener noreferrer">Rick and Morty API</a>; nenhum personagem está fixo no HTML.</p></section>
+  </main><footer><span>✳ PORTAL MULTIVERSO</span><span>Projeto educacional • Dados: Rick and Morty API</span><a href="#inicio">Voltar ao topo ↑</a></footer>
+</body>
+</html>
